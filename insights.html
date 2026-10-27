@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insights | NexaPoint Consulting</title>
+  <meta name="description" content="Read sample insights from NexaPoint Consulting on operational efficiency, digital transformation and using business metrics to make better decisions.">
+  <meta name="theme-color" content="#14243A">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+  <script src="js/insights.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== HEADER (shared component: see docs/shared-components.md) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__mark" src="assets/icons/logo-mark.svg" alt="" width="38" height="38">
+        <span class="logo__text">NexaPoint <small>Consulting</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="insights.html" aria-current="page">Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== PAGE INTRODUCTION AND BREADCRUMB ===== -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Insights</li>
+          </ol>
+        </nav>
+        <h1 id="page-heading">Insights</h1>
+        <p class="lead">
+          Practical ideas on operations, technology and decision-making for growing organisations.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== NOTE: SAMPLE CONTENT ===== -->
+    <section class="section section--tight" aria-labelledby="note-heading">
+      <div class="container">
+        <div class="notice notice--gold">
+          <h2 class="visually-hidden" id="note-heading">About these articles</h2>
+          <p>
+            <strong>Please note:</strong> these are sample articles written to demonstrate this
+            section of the website. They share general, practical ideas and are not based on
+            research findings or client work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLES: SEARCH, FILTER AND LIST ===== -->
+    <section class="section section--light" aria-labelledby="articles-heading">
+      <div class="container">
+        <div class="section__header">
+          <h2 id="articles-heading">Sample articles</h2>
+          <p class="lead">Search by topic or browse by category. Select Read Article to open the full text.</p>
+        </div>
+
+        <!-- Search and filter (hidden by CSS when JavaScript is unavailable) -->
+        <div class="insights-toolbar" role="search" aria-label="Search and filter articles">
+          <div class="form-field">
+            <label class="form-label" for="article-search">Search articles</label>
+            <input class="form-control" type="search" id="article-search" autocomplete="off" aria-describedby="search-hint" placeholder="For example: efficiency, KPIs">
+            <p class="form-hint" id="search-hint">Searches titles, summaries and the full article text.</p>
+          </div>
+
+          <div class="form-field">
+            <p class="form-label" id="filter-label">Filter by category</p>
+            <div class="chip-group" role="group" aria-labelledby="filter-label">
+              <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="chip" type="button" data-filter="operations" aria-pressed="false">Operations</button>
+              <button class="chip" type="button" data-filter="digital" aria-pressed="false">Digital transformation</button>
+              <button class="chip" type="button" data-filter="data" aria-pressed="false">Data and metrics</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="results-status" id="results-status" role="status">Showing 3 articles</p>
+
+        <div class="grid grid--3" id="article-list">
+
+          <!-- ----- Article 1 ----- -->
+          <article class="card article-card" data-category="operations">
+            <div class="article-card__meta">
+              <span class="tag">Operations</span>
+              <span class="tag tag--gold">Sample article</span>
+            </div>
+            <h3 class="card__title">Five Ways Small Businesses Can Improve Operational Efficiency</h3>
+            <p class="card__text">Small changes in how work flows can free up time and reduce frustration. Here are five practical places to start, none of which need a large budget.</p>
+
+            <div class="article-content article-body">
+              <p>Operational efficiency is about getting the same or better results with less wasted time, effort and money. For a small business, that rarely needs a large programme. It usually starts with a few honest questions about how work really gets done.</p>
+
+              <h4>1. Map the work as it really happens</h4>
+              <p>Write down the main steps of one important process, such as handling an order or welcoming a new customer, exactly as people do it today, not as it is supposed to happen. Gaps, delays and handoffs often become obvious on a single sheet of paper.</p>
+
+              <h4>2. Remove duplicated effort</h4>
+              <p>Look for information that is typed in twice, approvals nobody reads, and tasks done only because they have always been done. Each one you remove gives time back without lowering the quality of the result.</p>
+
+              <h4>3. Write down how things should be done</h4>
+              <p>A short, clear checklist for repeated tasks makes work more consistent and makes it easier to train new team members. Keep the documents simple, and update them whenever the process changes.</p>
+
+              <h4>4. Choose tools that fit the process</h4>
+              <p>Decide how the work should flow first, then look for tools that support it. Buying software before you understand the process often adds complexity instead of removing it.</p>
+
+              <h4>5. Track a few measures and review them</h4>
+              <p>Pick two or three simple measures, such as how long a task takes or how often it needs rework, and look at them on a regular schedule. What gets reviewed tends to improve.</p>
+
+              <p>Start with one process, make one change, and check whether it helped. Small, steady improvements add up.</p>
+            </div>
+
+            <div class="card__footer">
+              <button class="btn btn--outline" type="button" data-read-article>Read Article<span class="visually-hidden">: Five Ways Small Businesses Can Improve Operational Efficiency</span></button>
+            </div>
+          </article>
+
+          <!-- ----- Article 2 ----- -->
+          <article class="card article-card" data-category="digital">
+            <div class="article-card__meta">
+              <span class="tag">Digital transformation</span>
+              <span class="tag tag--gold">Sample article</span>
+            </div>
+            <h3 class="card__title">A Practical Introduction to Digital Transformation</h3>
+            <p class="card__text">What digital transformation means, why it is more about people and processes than software, and how to take the first practical steps.</p>
+
+            <div class="article-content article-body">
+              <p>Digital transformation can sound large and technical, but the idea is simple: using digital tools and data to improve how an organisation works and how it serves its customers. It is as much about people and processes as it is about technology.</p>
+
+              <h4>What digital transformation really means</h4>
+              <p>It is not the same as buying new software. A new tool only helps when it solves a real problem and the team knows how to use it. Transformation is the wider change in how work is done, supported by technology.</p>
+
+              <h4>Start with a problem, not a product</h4>
+              <p>Begin by naming the specific problem you want to solve, for example slow reporting, scattered customer records or paper forms that get lost. A clear problem makes it much easier to judge which tools, if any, are worth considering.</p>
+
+              <h4>Check your readiness</h4>
+              <p>Before choosing technology, take stock of four things:</p>
+              <ul>
+                <li><strong>Your people:</strong> their skills, confidence and capacity for change.</li>
+                <li><strong>Your processes:</strong> how work flows today and where it stalls.</li>
+                <li><strong>Your tools:</strong> what you already use and how well it is used.</li>
+                <li><strong>Your data:</strong> where information lives and how reliable it is.</li>
+              </ul>
+
+              <h4>Move in small, visible steps</h4>
+              <p>A pilot with one team or one process lets you learn quickly and fix problems while they are still small. Early, visible wins also build confidence for the next step.</p>
+
+              <h4>Take people with you</h4>
+              <p>Explain why the change is happening, involve the people who will use the new tools, and allow time to learn. Adoption is usually decided by how people feel about the change, not by the features of the tool.</p>
+
+              <p>Digital transformation is a series of practical decisions rather than a single project. Each one should make work clearer, faster or more reliable for someone.</p>
+            </div>
+
+            <div class="card__footer">
+              <button class="btn btn--outline" type="button" data-read-article>Read Article<span class="visually-hidden">: A Practical Introduction to Digital Transformation</span></button>
+            </div>
+          </article>
+
+          <!-- ----- Article 3 ----- -->
+          <article class="card article-card" data-category="data">
+            <div class="article-card__meta">
+              <span class="tag">Data and metrics</span>
+              <span class="tag tag--gold">Sample article</span>
+            </div>
+            <h3 class="card__title">Using Business Metrics to Make Better Decisions</h3>
+            <p class="card__text">How to choose a few meaningful measures, set a starting point and build a simple review habit that supports better decisions.</p>
+
+            <div class="article-content article-body">
+              <p>Business metrics turn a vague sense of how things are going into something you can discuss and act on. Used well, they help leaders spot problems early and focus on what matters. Used badly, they create noise.</p>
+
+              <h4>Start from the decision</h4>
+              <p>Ask what decision a number will help you make. If a measure would not change what you do, it probably does not need a place on your dashboard.</p>
+
+              <h4>Choose a small number of indicators</h4>
+              <p>A key performance indicator, or KPI, is a measure tied directly to a goal. Aim for a handful that together give a balanced picture, such as one for sales, one for customers, one for operations and one for finances, rather than dozens of figures nobody has time to read.</p>
+
+              <h4>Know where you are starting</h4>
+              <p>Record the current figure before making changes. Without a baseline, it is hard to tell whether an improvement is real or only feels real.</p>
+
+              <h4>Build a regular review habit</h4>
+              <p>Decide how often each measure will be reviewed, and who is responsible for it. A short, regular conversation about the numbers is more useful than an occasional large report.</p>
+
+              <h4>Watch for common traps</h4>
+              <ul>
+                <li>Measuring what is easy rather than what matters.</li>
+                <li>Treating one number as the whole story.</li>
+                <li>Changing definitions part-way through, which makes comparisons unreliable.</li>
+                <li>Collecting data that nobody uses.</li>
+              </ul>
+
+              <p>Good metrics support judgement, they do not replace it. Combine the numbers with what you know about your customers, your team and your market.</p>
+            </div>
+
+            <div class="card__footer">
+              <button class="btn btn--outline" type="button" data-read-article>Read Article<span class="visually-hidden">: Using Business Metrics to Make Better Decisions</span></button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Shown by JavaScript when no article matches -->
+        <div class="empty-state" id="no-results" hidden>
+          <h3>No articles match your search</h3>
+          <p>Try a different word, check the spelling, or remove the category filter.</p>
+          <button class="btn btn--outline" type="button" id="clear-filters">Clear search and filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container cta-band__inner">
+        <div class="cta-band__text">
+          <h2 id="cta-heading">Want to talk through your own challenges?</h2>
+          <p>Every organisation is different. Tell us about yours and we can discuss how we could help.</p>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn--primary" href="contact.html">Book a Consultation</a>
+          <a class="btn btn--outline-light" href="services.html">View Our Services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== ARTICLE READER (native modal dialog, filled by js/insights.js) ===== -->
+  <dialog class="dialog" id="article-dialog" aria-labelledby="dialog-title">
+    <div class="dialog__header">
+      <div class="dialog__tags">
+        <span class="tag" id="dialog-category"></span>
+        <span class="tag tag--gold">Sample article</span>
+      </div>
+      <button class="dialog__close" type="button" data-dialog-close aria-label="Close article">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+
+    <div class="dialog__scroll">
+      <h2 id="dialog-title" tabindex="-1"></h2>
+      <div class="dialog__body article-body" id="dialog-body"></div>
+
+      <div class="dialog__footer btn-group">
+        <button class="btn btn--outline" type="button" data-dialog-close>Close</button>
+        <a class="btn btn--primary" href="contact.html">Book a Consultation</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===== FOOTER (shared component: see docs/shared-components.md) ===== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+
+      <div>
+        <a class="logo" href="index.html">
+          <img class="logo__mark" src="assets/icons/logo-mark.svg" alt="" width="38" height="38">
+          <span class="logo__text">NexaPoint <small>Consulting</small></span>
+        </a>
+        <p class="site-footer__tagline">Clarity. Strategy. Sustainable Growth.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="insights.html" aria-current="page">Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contact</h2>
+        <address>
+          <ul>
+            <li><a href="mailto:info@nexapoint.example">info@nexapoint.example</a></li>
+            <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+            <li>Nairobi, Kenya</li>
+          </ul>
+        </address>
+        <p class="site-footer__demo-note">Demonstration details for a class project, not a real business contact.</p>
+      </div>
+
+      <div>
+        <h2>Office hours</h2>
+        <p>Monday–Friday<br>8:00 AM–5:00 PM EAT</p>
+      </div>
+
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>&copy; <span data-current-year>2026</span> NexaPoint Consulting. A fictional company created for a software development class project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

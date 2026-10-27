@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | NexaPoint Consulting</title>
+  <meta name="description" content="Contact NexaPoint Consulting to discuss your business challenges. Use the demonstration enquiry form or the demonstration contact details.">
+  <meta name="theme-color" content="#14243A">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== HEADER (shared component: see docs/shared-components.md) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">
+        <img class="logo__mark" src="assets/icons/logo-mark.svg" alt="" width="38" height="38">
+        <span class="logo__text">NexaPoint <small>Consulting</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== PAGE INTRODUCTION AND BREADCRUMB ===== -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Contact Us</li>
+          </ol>
+        </nav>
+        <h1 id="page-heading">Contact Us</h1>
+        <p class="lead">
+          Tell us about your organisation and what you would like to achieve, and we can start a
+          conversation about how NexaPoint Consulting could help.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== NOTE: THIS IS A DEMONSTRATION ===== -->
+    <section class="section section--tight" aria-labelledby="note-heading">
+      <div class="container">
+        <div class="notice notice--gold">
+          <h2 class="visually-hidden" id="note-heading">About this page</h2>
+          <p>
+            <strong>Demonstration only:</strong> this website is a class project and is not
+            connected to a server. The enquiry form does not send your message anywhere, and the
+            contact details below are demonstration details, not a real business contact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENQUIRY FORM AND CONTACT DETAILS ===== -->
+    <section class="section" aria-labelledby="form-heading">
+      <div class="container split split--wide-text split--top">
+
+        <!-- ---------- The enquiry form ---------- -->
+        <div class="stack--lg">
+          <div>
+            <h2 id="form-heading">Consultation enquiry</h2>
+            <p class="text-muted contact-required-note">
+              Fields marked <span class="required" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span>
+              are required.
+            </p>
+          </div>
+
+          <!-- Shown only when JavaScript is switched off -->
+          <div class="notice no-js-only">
+            <p>
+              This demonstration form needs JavaScript to run, and it would not send anything in
+              any case. Please use the demonstration contact details instead.
+            </p>
+          </div>
+
+          <!-- After a failed submit: a list of problems (filled in by js/contact.js) -->
+          <div class="form-status form-status--error" id="form-errors" tabindex="-1" hidden>
+            <h3 id="form-errors-heading">Please fix the following before submitting:</h3>
+            <ul id="form-errors-list"></ul>
+          </div>
+
+          <!-- After a valid submit: an honest message, because nothing is actually sent -->
+          <div class="form-status form-status--success" id="form-success" tabindex="-1" hidden>
+            <p><strong>Thank you for completing the demonstration form.</strong> No enquiry has been sent because this website does not yet have a connected backend.</p>
+            <p>Nothing you typed was sent, saved or stored, and the form has been cleared.</p>
+          </div>
+
+          <!-- No action or method on purpose: this form never submits anywhere -->
+          <form class="form" id="enquiry-form" aria-labelledby="form-heading">
+
+            <div class="form__row form__row--2">
+              <div class="form-field">
+                <label class="form-label" for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+                <input class="form-control" type="text" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name" aria-describedby="name-error">
+                <p class="form-error" id="name-error"></p>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                <input class="form-control" type="email" id="email" name="email" required maxlength="120" autocomplete="email" aria-describedby="email-hint email-error">
+                <p class="form-hint" id="email-hint">For example: name@example.com</p>
+                <p class="form-error" id="email-error"></p>
+              </div>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div class="form-field">
+                <label class="form-label" for="organisation">Organisation <span class="optional">(optional)</span></label>
+                <input class="form-control" type="text" id="organisation" name="organisation" maxlength="100" autocomplete="organization">
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="service">Service you are interested in <span class="required" aria-hidden="true">*</span></label>
+                <select class="form-control" id="service" name="service" required aria-describedby="service-error">
+                  <option value="">Select a service</option>
+                  <option value="business-strategy">Business Strategy and Planning</option>
+                  <option value="digital-transformation">Digital Transformation</option>
+                  <option value="operations-improvement">Operations and Process Improvement</option>
+                  <option value="data-business-intelligence">Data and Business Intelligence</option>
+                </select>
+                <p class="form-error" id="service-error"></p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="subject">Subject <span class="optional">(optional)</span></label>
+              <input class="form-control" type="text" id="subject" name="subject" maxlength="100">
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="message" name="message" rows="6" required minlength="20" maxlength="1000" aria-describedby="message-hint message-error"></textarea>
+              <p class="form-hint" id="message-hint">
+                Please write at least 20 characters.
+                <span class="js-only"><span id="message-count">0</span> of 1000 characters used.</span>
+              </p>
+              <p class="form-error" id="message-error"></p>
+            </div>
+
+            <div class="form-footer">
+              <!-- Starts disabled so it can never submit without JavaScript; js/contact.js enables it -->
+              <button class="btn btn--primary" type="submit" id="submit-button" disabled>Submit Enquiry</button>
+              <p class="caption">Demonstration form: submitting it does not send your details anywhere.</p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- ---------- Contact details ---------- -->
+        <aside class="stack--lg" aria-labelledby="details-heading">
+          <h2 id="details-heading">Contact details</h2>
+
+          <div class="panel">
+            <dl class="fact-list">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:info@nexapoint.example">info@nexapoint.example</a></dd>
+              </div>
+              <div>
+                <dt>Telephone</dt>
+                <dd><a href="tel:+254700000000">+254 700 000 000</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Nairobi, Kenya</dd>
+              </div>
+              <div>
+                <dt>Office hours</dt>
+                <dd>Monday–Friday, 8:00 AM–5:00 PM EAT</dd>
+              </div>
+            </dl>
+          </div>
+
+          <p class="notice">
+            <strong>Demonstration details.</strong> The email address and telephone number above
+            are placeholders for this class project and are not verified live contacts. They must
+            be replaced before the website is used by a real company.
+          </p>
+
+          <div>
+            <h3 class="subheading">Helpful things to include</h3>
+            <ul class="check-list contact-tips">
+              <li>What your organisation does and roughly how large it is</li>
+              <li>The challenge or goal you would like help with</li>
+              <li>Any timeline you have in mind</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (shared component: see docs/shared-components.md) ===== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+
+      <div>
+        <a class="logo" href="index.html">
+          <img class="logo__mark" src="assets/icons/logo-mark.svg" alt="" width="38" height="38">
+          <span class="logo__text">NexaPoint <small>Consulting</small></span>
+        </a>
+        <p class="site-footer__tagline">Clarity. Strategy. Sustainable Growth.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Contact</h2>
+        <address>
+          <ul>
+            <li><a href="mailto:info@nexapoint.example">info@nexapoint.example</a></li>
+            <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+            <li>Nairobi, Kenya</li>
+          </ul>
+        </address>
+        <p class="site-footer__demo-note">Demonstration details for a class project, not a real business contact.</p>
+      </div>
+
+      <div>
+        <h2>Office hours</h2>
+        <p>Monday–Friday<br>8:00 AM–5:00 PM EAT</p>
+      </div>
+
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>&copy; <span data-current-year>2026</span> NexaPoint Consulting. A fictional company created for a software development class project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
